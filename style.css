@@ -1,0 +1,324 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 28px 0 32px 0;
+  margin: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.lightModeBody {
+  background-color: white;
+  color: #1e202a;
+}
+
+.bodyDark {
+  background-color: #1e202a;
+  color: white;
+}
+
+.bodyTopDark {
+  background-color: #1f212e;
+}
+
+.bodyTopLight {
+  background-color: #f5f7ff;
+}
+
+.bodyTop {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 244px;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contentWrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 44px 0;
+}
+
+.dashboardName {
+  margin: 0 0 4px 0;
+}
+
+.followerCount {
+  margin: 0;
+  font-size: 13.5px;
+}
+
+.themeSwitcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modeName {
+  margin: 0 16px 0 0;
+  color: #63687e;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.switchButton {
+  width: 48px;
+  height: 24px;
+  padding: 0 4px;
+  border: none;
+  border-radius: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.switchButtonLight {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: -webkit-gradient(linear, left top, right top, from(#aeb3cb), to(#aeb3cb));
+  background: linear-gradient(to right, #aeb3cb, #aeb3cb);
+}
+
+.switchButtonDark {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+.switchButtonBall {
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  margin: 0;
+}
+
+.switchButtonBallLight {
+  background-color: #f0f2fa;
+}
+
+.switchButtonBallDark {
+  background-color: #1e202a;
+}
+
+.upperRow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 0 0 54px 0;
+}
+
+.squareCard {
+  height: 185px;
+  margin: 0;
+  padding: 20px 0 0 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.cardOverview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 6px 0;
+}
+
+.socialMediaLogo {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+}
+
+.squareCardFollowerCount {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.squareCardFollowers {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0 0 22px 0;
+}
+
+.facebookCard {
+  border-top: 4px solid #198ff5;
+}
+
+.twitterCard {
+  border-top: 4px solid #1ca0f2;
+}
+
+.instagramCard {
+  border-top: 4px solid #fdc468;
+}
+
+.youtubeCard {
+  border-top: 4px solid #c4032a;
+}
+
+.bottomSquareCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.squareCardBottomText {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 0 5px;
+}
+
+.greenText {
+  color: #1db489;
+  font-weight: 700;
+}
+
+.redText {
+  color: #dc414c;
+  font-weight: 700;
+}
+
+.nicknameText {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.lightThemeText {
+  color: #63687e;
+}
+
+.darkThemeText {
+  color: #8b97c6;
+}
+
+.lightThemeCard {
+  background-color: #f0f2fa;
+}
+
+.darkThemeCard {
+  background-color: #252a41;
+}
+
+.bottomText {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+
+.bottomCardSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.rectangleCard {
+  height: 81px;
+  padding: 26px 30px 18px 24px;
+  border-radius: 6px;
+}
+
+.rectanglePartUpper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 24px 0;
+}
+
+.rectangleUpperText {
+  margin: 0;
+  font-weight: 700;
+}
+
+.logoBottom {
+  width: 20px;
+  height: 20px;
+}
+
+.rectanglePartLower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bottomFollowerCount {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.bottomRectangleCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rectangleCardBottomText {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.arrowImage {
+  width: 8px;
+  height: 4px;
+}
+/*# sourceMappingURL=style.css.map */
