@@ -1,0 +1,298 @@
+$font: "Inter", sans-serif;
+// Primary Colors
+$limeGreen: hsl(163, 72%, 41%);
+$brightRed: hsl(356, 69%, 56%);
+$facebook: hsl(208, 92%, 53%);
+$twitter: hsl(203, 89%, 53%);
+$instagran: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$youtube: hsl(348, 97%, 39%);
+
+// Dark Theme
+$darkToggleSwitch: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+$veryDarkBlueBg: hsl(230, 17%, 14%);
+$veryDarkBlueTopBg: hsl(232, 19%, 15%);
+$darkDesaturatedBlueCardBg: hsl(228, 28%, 20%);
+$desaturatedBlueText: hsl(228, 34%, 66%);
+$whiteText: hsl(0, 0%, 100%);
+// Light Theme
+$lightToggleSwitch: hsl(230, 22%, 74%);
+$whiteBg: hsl(0, 0%, 100%);
+$veryPaleBlueTopBg: hsl(225, 100%, 98%);
+$lightGrayishBlueCardBg: hsl(227, 47%, 96%);
+$darkGrayishBlueText: hsl(228, 12%, 44%);
+$veryDarkBlueText: hsl(230, 17%, 14%);
+
+body {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 28px 0 32px 0;
+  margin: 0;
+  transition: all 0.4s;
+}
+.lightModeBody {
+  background-color: $whiteBg;
+  color: $veryDarkBlueText;
+}
+.bodyDark {
+  background-color: $veryDarkBlueBg;
+  color: $whiteText;
+}
+.bodyTopDark {
+  background-color: $veryDarkBlueTopBg;
+}
+.bodyTopLight {
+  background-color: $veryPaleBlueTopBg;
+}
+.bodyTop {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 244px;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  transition: all 0.4s;
+}
+.contentWrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 44px 0;
+}
+.dashboardName {
+  margin: 0 0 4px 0;
+}
+.followerCount {
+  margin: 0;
+  font-size: 13.5px;
+}
+.themeSwitcher {
+  display: flex;
+  align-items: center;
+}
+.modeName {
+  margin: 0 16px 0 0;
+  color: $darkGrayishBlueText;
+  font-size: 13px;
+  font-weight: 700;
+}
+.switchButton {
+  width: 48px;
+  height: 24px;
+  padding: 0 4px;
+  border: none;
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+.switchButtonLight {
+  justify-content: flex-end;
+  background: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+}
+.switchButtonDark {
+  justify-content: flex-start;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.switchButtonBall {
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  margin: 0;
+}
+.switchButtonBallLight {
+  background-color: $lightGrayishBlueCardBg;
+}
+.switchButtonBallDark {
+  background-color: $veryDarkBlueBg;
+}
+.upperRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin: 0 0 54px 0;
+}
+.squareCard {
+  height: 185px;
+  margin: 0;
+  padding: 20px 0 0 0;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+}
+.cardOverview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 6px 0;
+}
+.socialMediaLogo {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px 0 0;
+}
+.squareCardFollowerCount {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 0;
+}
+.squareCardFollowers {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0 0 22px 0;
+}
+.facebookCard {
+  border-top: 4px solid $facebook;
+}
+.twitterCard {
+  border-top: 4px solid $twitter;
+}
+.instagramCard {
+  border-top: 4px solid hsl(37, 97%, 70%);
+}
+.youtubeCard {
+  border-top: 4px solid $youtube;
+}
+.bottomSquareCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.squareCardBottomText {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 0 5px;
+}
+.greenText {
+  color: $limeGreen;
+  font-weight: 700;
+}
+.redText {
+  color: $brightRed;
+  font-weight: 700;
+}
+.nicknameText {
+  font-size: 12px;
+  font-weight: 700;
+}
+.lightThemeText {
+  color: $darkGrayishBlueText;
+}
+.darkThemeText {
+  color: $desaturatedBlueText;
+}
+.card {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.lightThemeCard {
+  background-color: $lightGrayishBlueCardBg;
+}
+.lightThemeCard:hover {
+  filter: brightness(92.5%);
+}
+.darkThemeCard {
+  background-color: $darkDesaturatedBlueCardBg;
+}
+.darkThemeCard:hover {
+  filter: brightness(120%);
+}
+.bottomText {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+.bottomCardSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+.rectangleCard {
+  height: 81px;
+  padding: 26px 30px 18px 24px;
+  border-radius: 6px;
+}
+.rectanglePartUpper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 24px 0;
+}
+.rectangleUpperText {
+  margin: 0;
+  font-weight: 700;
+}
+.logoBottom {
+  width: 20px;
+  height: 20px;
+}
+.rectanglePartLower {
+  display: flex;
+  justify-content: space-between;
+}
+.bottomFollowerCount {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+.bottomRectangleCard {
+  display: flex;
+  align-items: center;
+}
+.rectangleCardBottomText {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.arrowImage {
+  width: 8px;
+  height: 4px;
+}
+@media (max-width: 1200px) {
+  .contentWrapper {
+    width: 900px;
+  }
+  .upperRow,
+  .bottomCardSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1000px) {
+  .contentWrapper {
+    width: 700px;
+  }
+}
+@media (max-width: 800px) {
+  .contentWrapper {
+    width: 500px;
+  }
+}
+@media (max-width: 550px) {
+  .contentWrapper {
+    width: 90vw;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mainInformation {
+    margin: 0 0 16px 0;
+  }
+  .upperRow,
+  .bottomCardSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .dashboardName {
+    font-size: 22px;
+  }
+}
